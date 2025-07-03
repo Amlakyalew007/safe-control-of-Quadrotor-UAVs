@@ -52,31 +52,35 @@ The control law combines multiple advanced techniques:
 - **RBF-NN**: Provides online approximation of unknown nonlinear functions.
 - **DO**: Estimates external disturbances with reduced order.
 
+
+## Figure 1: The Full Control Design Scheme Seen From Simulink Design  
+
+![Alt Text](https://github.com/Amlakyalew007/safe-control-of-Quadrotor-UAVs/blob/main/images/system%20design.png)
+
 ---
+
+
 
 ## 🧪 Simulation Setup
 
 The control framework was tested on a quadrotor UAV with external disturbances (wind-like sinusoidal signals) acting on all axes. The same control structure was applied to all subsystems (altitude, lateral, and rotational motions), but only the Z-axis (altitude) controller is shown for brevity.
 
+## Figure 2: Z-axis (Vertical Lift) Control Design
+![Alt Text](https://github.com/Amlakyalew007/safe-control-of-Quadrotor-UAVs/blob/main/images/z-axis%20control.png)
+
 ---
 
 ## 📊 Simulation Results
 
-### Figure 1: Z-axis Tracking Control Performance  
-> Shows the UAV altitude tracking performance. The controller tracks the desired trajectory accurately despite disturbances and state constraints.
-
-### Figure 2: Constraint Satisfaction via Improved BLF  
+### Figure 3: Constraint Satisfaction via Improved BLF (Seen From Error Dynamics) 
 > Demonstrates how the improved BLF allows state trajectories to violate constraints during `t ∈ [0, Ts]`, then strictly enforces constraints afterward. Unlike traditional BLFs, the proposed method handles poor initial conditions smoothly.
+> If we look at the red line (error) it starts outside the boundary line of the constraint yet it was able to come in before the predefined time Ts (Ts is found from the inducible factor which is a variant sigmoid function used to relax the constraint by creating a weak constraint stage at the start).
 
-### Figure 3: Sliding Surface and Error Dynamics  
-> Displays the evolution of sliding surface `s` and tracking error `e` under the influence of control and compensation mechanisms.
+![Alt Text](https://github.com/Amlakyalew007/safe-control-of-Quadrotor-UAVs/blob/main/images/e1.jpg)
 
-### Figure 4: Disturbance Observer Performance  
-> Illustrates how the DO effectively estimates both matched and unmatched disturbances in real time.
-
-### Figure 5: Control Input Signals  
-> Shows the bounded and smooth control efforts applied to the UAV motors during tracking and stabilization.
-
+### Figure 4: 3D trajectory tracking performance  
+> This figure shows the 3D trajectory tracking performance of a quadrotor UAV. The red line represents the desired helical trajectory, while the blue line indicates the obtained trajectory under the proposed control system. The close alignment between the two confirms the controller’s effectiveness in accurately tracking complex spatial paths.
+![Alt Text](https://github.com/Amlakyalew007/safe-control-of-Quadrotor-UAVs/blob/main/images/tracking.jpg)
 ---
 
 ## 📌 Conclusion
@@ -87,6 +91,5 @@ The use of a **two-stage BLF**, dynamic observer design, and **RBF-NN-based comp
 
 ---
 
-## 📁 Repository Structure
 
 
