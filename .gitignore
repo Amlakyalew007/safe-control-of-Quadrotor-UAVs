@@ -1,0 +1,28 @@
+# MATLAB
+*.asv
+*.autosave
+*.m~
+*.fig
+*.mdl.autosave
+*.slx.autosave
+*.log
+*.bak
+*.tmp
+*.mat
+*.mex*
+
+# Simulink cache
+slprj/
+sfprj/
+*.slxc
+*.slxc_autosave
+
+# Simulink generated code
+codegen/
+*.mexw64
+*.mexmaci64
+
+# VSCode and OS-specific
+.vscode/
+.DS_Store
+Thumbs.db
