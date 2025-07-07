@@ -33,8 +33,9 @@ The design ensures all system signals remain **semi-globally uniformly ultimatel
 ## ⚙️ Problem Formulation
 
 We consider a second-order nonlinear system of the form:
+![Alt Text](https://github.com/Amlakyalew007/safe-control-of-Quadrotor-UAVs/blob/main/images/problem.png)
 
-Control objectives:
+  # Control objectives:
 
 - Ensure SGUUB of all signals.
 - Achieve accurate trajectory tracking.
@@ -91,5 +92,23 @@ The use of a **two-stage BLF**, dynamic observer design, and **RBF-NN-based comp
 
 ---
 
+
+**NOTE:** the design process is shown below which is part of a masters degree project done under the guidance of professor Wu Dawei, Hohai University Dept. of Artificial intelligent and Automation 
+
+
+![Alt Text](https://github.com/Amlakyalew007/safe-control-of-Quadrotor-UAVs/blob/main/images/page1.jpg)
+![Alt Text](https://github.com/Amlakyalew007/safe-control-of-Quadrotor-UAVs/blob/main/images/page2.jpg)
+![Alt Text](https://github.com/Amlakyalew007/safe-control-of-Quadrotor-UAVs/blob/main/images/page3.jpg)
+![Alt Text](https://github.com/Amlakyalew007/safe-control-of-Quadrotor-UAVs/blob/main/images/page4.jpg)
+![Alt Text](https://github.com/Amlakyalew007/safe-control-of-Quadrotor-UAVs/blob/main/images/page5.jpg)
+![Alt Text](https://github.com/Amlakyalew007/safe-control-of-Quadrotor-UAVs/blob/main/images/page6.jpg)
+![Alt Text](https://github.com/Amlakyalew007/safe-control-of-Quadrotor-UAVs/blob/main/images/page7.jpg)
+![Alt Text](https://github.com/Amlakyalew007/safe-control-of-Quadrotor-UAVs/blob/main/images/page8.jpg)
+![Alt Text](https://github.com/Amlakyalew007/safe-control-of-Quadrotor-UAVs/blob/main/images/page9.jpg)
+![Alt Text](https://github.com/Amlakyalew007/safe-control-of-Quadrotor-UAVs/blob/main/images/page10.jpg)
+![Alt Text](https://github.com/Amlakyalew007/safe-control-of-Quadrotor-UAVs/blob/main/images/page11.jpg)
+
+
+**MORE NOTE:** If necessary we can design the (roll, Pitch, Yaw) control law (U2, U3, U4) according to the above design method! For the time being, as mentioned in the above the control law (U2, U3, U4) are designed using Fast super twisting adaptive backstepping sliding mode control for more information and detailed design process refer to https://github.com/Amlakyalew007/Quadrotor-UAV-fast-super-twisting-adaptive-backstepping-SMC.git
 
 
