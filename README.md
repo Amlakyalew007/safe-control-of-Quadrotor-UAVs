@@ -93,7 +93,7 @@ The use of a **two-stage BLF**, dynamic observer design, and **RBF-NN-based comp
 ---
 
 
-**NOTE:** the design process is shown below which is part of a masters degree project done under the guidance of professor Wu Dawei, Hohai University Dept. of Artificial intelligent and Automation 
+**NOTE:** the design process is shown below which is part of my masters degree project done under the guidance of professor Wu Dawei, Hohai University Dept. of Artificial intelligent and Automation 
 
 
 ![Alt Text](https://github.com/Amlakyalew007/safe-control-of-Quadrotor-UAVs/blob/main/images/page1.jpg)
@@ -109,6 +109,6 @@ The use of a **two-stage BLF**, dynamic observer design, and **RBF-NN-based comp
 ![Alt Text](https://github.com/Amlakyalew007/safe-control-of-Quadrotor-UAVs/blob/main/images/page11.jpg)
 
 
-**MORE NOTE:** If necessary we can design the (roll, Pitch, Yaw) control law (U2, U3, U4) according to the above design method! For the time being, as mentioned in the above the control law (U2, U3, U4) are designed using Fast super twisting adaptive backstepping sliding mode control for more information and detailed design process refer to https://github.com/Amlakyalew007/Quadrotor-UAV-fast-super-twisting-adaptive-backstepping-SMC.git
+**MORE NOTE:** If necessary we can design the (roll, Pitch, Yaw) control law (U2, U3, U4) according to the above design method! For the time being, as mentioned above the control law (U2, U3, U4) are designed using Fast super twisting adaptive backstepping sliding mode control, this is to say constraints were not imposed on the states. For more information and detailed design process refer to https://github.com/Amlakyalew007/Quadrotor-UAV-fast-super-twisting-adaptive-backstepping-SMC.git
 
 
