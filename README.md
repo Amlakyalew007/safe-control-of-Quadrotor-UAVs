@@ -54,6 +54,13 @@ The control law combines multiple advanced techniques:
 - **DO**: Estimates external disturbances with reduced order.
 
 
+## 🚀 How to Run
+  1. Open the project in MATLAB (recommended version: R2021a or later).
+  2. Run the file Init_system.m first.
+  3. Then run cooked.slx files in simulation.
+  4. Visualize control performance through built-in Simulink scopes or custom plot functions.
+  5. Run xyz_plot.m file (custom plot functions). 
+
 ## Figure 1: The Full Control Design Scheme Seen From Simulink Design  
 
 ![Alt Text](https://github.com/Amlakyalew007/safe-control-of-Quadrotor-UAVs/blob/main/images/system%20design.png)
